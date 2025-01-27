@@ -121,6 +121,46 @@ def bitwise_ops(a, b):
 
 
 if __name__ == "__main__":
+    # Test format_string
+    print(format_string("John", 25))  # John is 25 years old.
+    print(format_string("Alice", 30))  # Alice is 30 years old.
+
+    # Test conditional_check
+    print(conditional_check(15))  # Greater
+    print(conditional_check(5))   # Lesser
+    print(conditional_check(10))  # Equal
+
+    # Test loop_sum
+    print(loop_sum(5))  # 15 (1+2+3+4+5)
+    print(loop_sum(3))  # 6  (1+2+3)
+    print(loop_sum(1))  # 1
+
+    # Test list_operations
+    print(list_operations([1, 2, 3, 4, 5]))  # (15, 5, 1)
+    print(list_operations([10, 20, 30]))     # (60, 30, 10)
+
+    # Test dict_operations
+    students = {
+        "John": 85,
+        "Alice": 90,
+        "Bob": 75,
+        "Eve": 95
+    }
+    print(dict_operations(students))  # ['John', 'Alice', 'Eve']
+
+    # Test set_operations
+    print(set_operations([1, 2, 3], [2, 3, 4]))  # {2, 3}
+    print(set_operations([1, 2], [3, 4]))        # set()
+
+    # Test arithmetic_ops
+    print(arithmetic_ops(10, 5))  # {'addition': 15, 'subtraction': 5, 'multiplication': 50, 'division': 2.0}
+
+    # Test logical_ops
+    print(logical_ops(True, False))  # {'AND': False, 'OR': True, 'NOT x': False, 'NOT y': True}
+
+    # Test bitwise_ops
+    print(bitwise_ops(12, 10))  # {'AND': 8, 'OR': 14, 'XOR': 6, 'NOT a': -13, 'NOT b': -11, 'Left Shift a by 1': 24, 'Right Shift b by 1': 5}
+
     print(format_string("John", 25))
     print(format_string("Alice", 30))
     print(conditional_check(15))
