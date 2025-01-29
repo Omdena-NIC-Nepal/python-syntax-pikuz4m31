@@ -52,3 +52,26 @@ def test_bitwise_ops():
     assert result["or"] == 14
     assert result["xor"] == 6
 
+if __name__ == "__main__":
+    print(format_string("John", 25)) #format string 1 test
+    print(format_string("Alice", 30)) #format string 2 test
+    print(conditional_check(15)) #Check if a number is greater, lesser, or equal to 10.
+    print(conditional_check(5)) #Check if a number is greater, lesser, or equal to 10.
+    print(conditional_check(10)) #Check if a number is greater, lesser, or equal to 10.
+    print(loop_sum(5)) #summing of loop to the number 5 
+    print(loop_sum(3)) #summing of loop to the number 3
+    print(loop_sum(1)) #summing of loop to the number 1
+    print (list_operations([1, 2, 3, 4, 5])) #finding sum of elements, max element and smaller element in the list
+    print(list_operations([10, 20, 30]))  #addition of all elements in the list, max element and smaller element in the list
+    students = {
+        "John": 85,
+        "Alice": 90,
+        "Bob": 75,
+        "Eve": 95
+    }
+    print(dict_operations(students)) #Names of students with scores > 80
+    print(set_operations([1, 2, 3], [2, 3, 4]))  #finding Common elements
+    print(set_operations([1, 2], [3, 4]))      #Common elements if not found default is set  
+    print(arithmetic_ops(10,5))        #Results of arithemetic operations         
+    print(logical_ops(True, False)) #Results of logical operations
+    print(bitwise_ops(12, 10)) #Results of bitwise operations
