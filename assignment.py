@@ -8,7 +8,7 @@ def format_string(name, age):
         str: Formatted string
     """
     return f"My name is {name} and I am {age} years old"
- # return f"{name} is {age} years old."
+    # return f"{name} is {age} years old."
 
 def conditional_check(number):
     """
@@ -79,10 +79,10 @@ def arithmetic_ops(a, b):
         dict: Results of arithmetic operations
     """
     return {
-        "addition": a + b,
-        "subtraction": a - b,
-        "multiplication": a * b,
-        "division": a / b if b != 0 else "undefined"
+        "sum": a + b,
+        "difference": a - b,
+        "product": a * b,
+        "quotient": a / b if b != 0 else "undefined"
     }
 
 def logical_ops(x, y):
@@ -95,10 +95,10 @@ def logical_ops(x, y):
         dict: Results of logical operations
     """
     return {
-        "AND": x and y,
-        "OR": x or y,
-        "NOT x": not x,
-        "NOT y": not y
+        "and": x and y,
+        "or": x or y,
+        "not_x": not x,
+        "not y": not y
     }
 
 def bitwise_ops(a, b):
@@ -111,9 +111,9 @@ def bitwise_ops(a, b):
         dict: Results of bitwise operations
     """
     return {
-        "AND": a & b,
-        "OR": a | b,
-        "XOR": a ^ b,
+        "and": a & b,
+        "or": a | b,
+        "xor": a ^ b,
         "NOT a": ~a,
         "NOT b": ~b,
         "Left Shift a by 1": a << 1,
@@ -121,26 +121,3 @@ def bitwise_ops(a, b):
     }
 
 
-# if __name__ == "__main__":
-#     print(format_string("John", 25)) #format string 1 test
-#     print(format_string("Alice", 30)) #format string 2 test
-#     print(conditional_check(15)) #Check if a number is greater, lesser, or equal to 10.
-#     print(conditional_check(5)) #Check if a number is greater, lesser, or equal to 10.
-#     print(conditional_check(10)) #Check if a number is greater, lesser, or equal to 10.
-#     print(loop_sum(5)) #summing of loop to the number 5 
-#     print(loop_sum(3)) #summing of loop to the number 3
-#     print(loop_sum(1)) #summing of loop to the number 1
-#     print (list_operations([1, 2, 3, 4, 5])) #finding sum of elements, max element and smaller element in the list
-#     print(list_operations([10, 20, 30]))  #addition of all elements in the list, max element and smaller element in the list
-#     students = {
-#         "John": 85,
-#         "Alice": 90,
-#         "Bob": 75,
-#         "Eve": 95
-#     }
-#     print(dict_operations(students)) #Names of students with scores > 80
-#     print(set_operations([1, 2, 3], [2, 3, 4]))  #finding Common elements
-#     print(set_operations([1, 2], [3, 4]))      #Common elements if not found default is set  
-#     print(arithmetic_ops(10,5))        #Results of arithemetic operations         
-#     print(logical_ops(True, False)) #Results of logical operations
-#     print(bitwise_ops(12, 10)) #Results of bitwise operations
